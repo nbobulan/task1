@@ -20,4 +20,30 @@ public class QATest {
         assertEquals(qa.postBug(), expectedValue);
     }
 
+    @Test
+    public void testGetProjectName() throws Exception {
+        String expectedValue = "Travel";
+        Engineer engineer = new Engineer("", expectedValue);
+        assertEquals(engineer.getProjectName(), expectedValue);
+    }
+
+    @Test
+    public void testGetTeamName() throws Exception {
+        String expectedValue = "Admin";
+        Engineer engineer = new Engineer(expectedValue, "");
+        assertEquals(engineer.getTeamName(), expectedValue);
+    }
+
+    @Test
+    public void testGetSalary() throws Exception {
+        Engineer engineer = new Engineer("", "");
+        assertEquals(engineer.getSalary(), 0);
+    }
+
+    @Test
+    public void testSetSalary() throws Exception {
+        Engineer engineer = new Engineer("", "");
+        engineer.setSalary(1000);
+        assertEquals(engineer.getSalary(), 1000);
+    }
 }
