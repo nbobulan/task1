@@ -16,7 +16,7 @@ public class EngineerTest {
     @Test
     public void testGetSalary() throws Exception {
         Engineer engineer = new Engineer("", "");
-        assertEquals(engineer.getSalary(), null);
+        assertEquals(engineer.getSalary(), 0);
     }
 
     @Test
