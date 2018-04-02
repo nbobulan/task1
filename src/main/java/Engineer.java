@@ -3,12 +3,11 @@
  */
 public class Engineer {
 
-    private final String teamName;
-    private final String projectName;
-    private String salary;
+    protected String teamName;
+    protected String projectName;
+    protected int salary;
 
     public Engineer(String teamName, String projectName) {
-
         this.teamName = teamName;
         this.projectName = projectName;
     }
@@ -21,11 +20,11 @@ public class Engineer {
         return projectName;
     }
 
-    public String getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 }
