@@ -9,14 +9,14 @@ public class QATest {
     @Test
     public void testGetCreateTest() throws Exception {
         String expectedValue = "Created a test";
-        QA qa = new QA("QA", "QA Project");
+        QA qa = new QA("Admin", "Travel");
         assertEquals(qa.createTest(), expectedValue);
     }
 
     @Test
     public void testGetPostBug() throws Exception {
         String expectedValue = "Posted a bug";
-        QA qa = new QA("", expectedValue);
+        QA qa = new QA("Admin", "Travel");
         assertEquals(qa.postBug(), expectedValue);
     }
 
