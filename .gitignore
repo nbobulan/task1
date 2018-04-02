@@ -1,0 +1,5 @@
+.idea
+target/
+*.iml
+testng.xml
+testrun.properties
